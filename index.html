@@ -4,123 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>app1</title>
-    
-   
-    
+    <title>Weather App - Javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body><h1>Pronostico actual</h1>
-  <div id="climact"></div>
-  <div id="desact"></div>
-<div id="tempact"></div>
-<div id="tempmin"></div>
-<div id="tempmax"></div>
-<div id="speedwindy"></div>
-<div id="cloud"></div>
-<div id="volrain"></div>
-<div id="volsnow"></div>
+<body>
+
+    <header class="cabeza">
+        <nav class="navbar navbar-light ">
+            <a class="navbar-brand"><img id="arbol" src="icons/logo_crece.png"></a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+	
+    <section class="container-fluid">
+    	<div class="container">
+			<br>
+            <div class="row">
+                <div class="col-4 conta fore">
+                	<div class="">
+						<div class="row app-title"><p class="">DATE</p></div>
+						<div class="row container1">
+							<div class="col">
+								<div class="temperature-value">
+									<p>- °<span>C</span></p>
+								</div>
+							</div>
+							<div class="col">
+								<div class="weather-icon"> 
+									<img src="icons/unknown.png" alt=""> 
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<table width="200" border="0">
+							  <tbody>
+								<tr>
+								  <th scope="row">Air Quality</th>
+								  <td>&nbsp;</td>
+								</tr>
+								<tr>
+								  <th scope="row">Min Temp</th>
+								  <td>&nbsp;</td>
+								</tr>
+								<tr>
+								  <th scope="row">Max Temp</th>
+								  <td>&nbsp;</td>
+								</tr>
+								<tr>
+								  <th scope="row">Wind Speed</th>
+								  <td>&nbsp;</td>
+								</tr>
+								<tr>
+								  <th scope="row">Clouds</th>
+								  <td>&nbsp;</td>
+								</tr>
+								<tr>
+								  <th scope="row">Rain</th>
+								  <td>&nbsp;</td>
+								</tr>
+								<tr>
+								  <th scope="row">Snow</th>
+								  <td>&nbsp;</td>
+								</tr>
+							  </tbody>
+							</table>
+						</div>
+        			</div>					
+    			</div>
+				<div class="col-8">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+						  <img class="d-block w-100" src="img/Sol22.JPG" alt="Una">
+						</div>
+						<div class="carousel-item">
+						  <img class="d-block w-100" src="img/Sol11.JPG" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+						  <img class="d-block w-100" src="img/Sol33.JPG" alt="Third slide">
+						</div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Pa'trás</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Pa'lante</span>
+					  </a>
+					</div>
+				</div>
+				</div>
+			</div>
+		<br>
+		<div class="row ">
+			<div class="card-deck">
+			  <div class="card fore">
+				<div class="card-body">
+				  <h5 class="card-title">Forecast1</h5>
+				  <p class="card-text">
+						<div class="container2">
+							<div class="row app-title"><p class="">DATE</p></div>
+							<div class="row">
+								<div class="col">
+									<div class="temperature-value">
+										<p>- °<span>C</span></p>
+									</div>
+								</div>
+								<div class="col">
+									<div class="weather-icon"> 
+										<img src="icons/unknown.png" alt=""> 
+									</div>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<table width="200" border="0">
+								  <tbody>
+									<tr>
+									  <th scope="row">Air Quality</th>
+									  <td>&nbsp;</td>
+									</tr>
+									<tr>
+									  <th scope="row">Min Temp</th>
+									  <td>&nbsp;</td>
+									</tr>
+									<tr>
+									  <th scope="row">Max Temp</th>
+									  <td>&nbsp;</td>
+									</tr>
+									<tr>
+									  <th scope="row">Wind Speed</th>
+									  <td>&nbsp;</td>
+									</tr>
+									<tr>
+									  <th scope="row">Clouds</th>
+									  <td>&nbsp;</td>
+									</tr>
+									<tr>
+									  <th scope="row">Rain</th>
+									  <td>&nbsp;</td>
+									</tr>
+									<tr>
+									  <th scope="row">Snow</th>
+									  <td>&nbsp;</td>
+									</tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>					
+				  </p>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			  </div>
+			  <div class="card fore">
+				<div class="card-body">
+				  <h5 class="card-title">Forecast2</h5>
+				  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			  </div>
+			  <div class="card fore">
+				<div class="card-body">
+				  <h5 class="card-title">Forecast3</h5>
+				  <p class="card-text">This is a wider card with supporting text below equal height action.</p>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			  </div>
+			  <div class="card fore">
+				<div class="card-body">
+				  <h5 class="card-title">Forecast4</h5>
+				  <p class="card-text">This is a wider card with supporting text below equal height action.</p>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			  </div>
+			  <div class="card fore">
+				<div class="card-body">
+				  <h5 class="card-title">Forecast5</h5>
+				  <p class="card-text">This is a wider card with supporting text below equal height action.</p>
+				</div>
+				<div class="card-footer">
+				  <small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			  </div>
+				
+			</div>			               
+		</div>
+
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 
 
 
-
-<h1>Pronostico Ultimos 5 dias</h1>
-
-
-
-<!--  dia 1 actual -->
-<div id="clima1"></div>
-<div id="weather1"></div>
-
-
-
-
-<div id= "fecha"></div>
-  <div id="temp"></div>
-  <div id="tempmin"></div>
-  <div id="tempmax"></div>
-  <div id="speed"></div>
-  <div id="nubes"></div>
-  <div style="background-color: aqua" id="lluvia"></div>
-  <div style="background-color: aqua" id="nieve"></div>
-<br>
-<br>
-<br>
-
-<!--  dia 2  -->
-<div id="clima2"></div>
-<div id="weather2"></div>
-<br>
-
-<br>
-<div id= "fecha2"></div>
-  <div id="temp2"></div>
-  <div id="tempmin2"></div>
-  <div id="tempmax2"></div>
-  <div id="speed2"></div>
-  <div id="nubes2"></div>
-  <div style="background-color: aqua" id="lluvia2"></div>
-  <div style="background-color: aqua" id="nieve2"></div>
-
-  <br>
-  <br>
-  <br>
-
-  <!--  dia 3 -->
-  <div id="clima3"></div>
-<div id="weather3"></div>
-
-
-<div id= "fecha3"></div>
-<div id="temp3"></div>
-<div id="tempmin3"></div>
-<div id="tempmax3"></div>
-<div id="speed3"></div>
-<div id="nubes3"></div>
-<div style="background-color: aqua" id="lluvia3"></div>
-<div style="background-color: aqua" id="nieve3"></div>
-
-<br>
-  <br>
-  <br>
- <!--  dia 4 -->
- <div id="clima4"></div>
-<div id="weather4"></div>
-
-
- <div id= "fecha4"></div>
- <div id="temp4"></div>
- <div id="tempmin4"></div>
- <div id="tempmax4"></div>
- <div id="speed4"></div>
- <div id="nubes4"></div>
- <div style="background-color: aqua" id="lluvia4"></div>
- <div style="background-color: aqua" id="nieve4"></div>
-
- <br>
- <br>
- <br>
-
- <!--  dia 5 -->
- <div id="clima5"></div>
-<div id="weather5"></div>
-
-
- <div id= "fecha5"></div>
- <div id="temp5"></div>
- <div id="tempmin5"></div>
- <div id="tempmax5"></div>
- <div id="speed5"></div>
- <div id="nubes5"></div>
- <div style="background-color: aqua" id="lluvia5"></div>
- <div style="background-color: aqua" id="nieve5"></div>
- <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
-    <script text="text/javascript" src="jquery-3.4.1.js"></script>
-    <script text="text/javascript" src="conex.js"></script>
-    <script text="text/javascript" src="weather.js"></script>
-
-    
-   
 </body>
 </html>
-
-
