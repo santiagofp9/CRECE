@@ -20,67 +20,52 @@
     padding: 15px;
     margin: 0 auto;
     font-size: 1.2em;
-    
-}
-
-.notification{
-    display: none;
-}
-
-.notification p{
-    font-size: 1.2em;
-    margin: 0;
-    text-align: center;
-    padding: 10px 0;
 }
 
 .weather-icon{
     width: 70px;
     height: 70px;
 }
-
 .weather-icon img{
     display: block;
 	color: #616A6B;
-    
+}
+
+.weather-iconf{
+    width: 40px;
+    height: 40px;
+}
+.weather-iconf img{
+    display: block;
+	color: #616A6B;
+	width: 40px;
+    height: 40px;
 }
 
 .temperature-value{
     width: 100px;
     height:40px;
 }
-
 .temperature-value p{
     font-size: 4em;
     text-align: center;
     cursor: pointer;
 }
-
-.temperature-value p:hover{
-    
-}
-
 .temperature-value span{
     font-size: 0.5em;
 }
 
-.temperature-description p{
-    padding: 8px;
-    margin: 0;
-    text-align: center;
-    font-size: 1.2em;
+.temperature-value-f{
+    width: 100px;
+    height:40px;
 }
-
-.location{
-    
-}
-
-.location p{
-    margin: 0;
-    padding: 0;
-    color: #293251;
+.temperature-value-f p{
+    font-size: 4em;
     text-align: center;
-    font-size: 0.8em;
+    cursor: pointer;
+}
+.temperature-value-f span{
+    font-size: 0.5em;
 }
 
 #arbol {
