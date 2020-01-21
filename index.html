@@ -27,16 +27,15 @@
             <div class="row">
                 <div class="col-4 conta fore">
                 	<div class="">
-						<div class="row app-title"><p class="">DATE</p></div>
+						<div class="row app-title"><p class="">AHORA</p></div>
 						<div class="row container1">
 							<div class="col">
-								<div class="temperature-value">
-									<p>- °<span>C</span></p>
+								<div class="temperature-value" id="tempact">
+									<p><span>ºC</span></p>
 								</div>
 							</div>
 							<div class="col">
-								<div class="weather-icon"> 
-									<img src="icons/unknown.png" alt=""> 
+								<div id="climact" class="weather-icon">
 								</div>
 							</div>
 						</div>
@@ -46,31 +45,31 @@
 							  <tbody>
 								<tr>
 								  <th scope="row">Air Quality</th>
-								  <td>&nbsp;</td>
+								  <td id="desact"></td>
 								</tr>
 								<tr>
 								  <th scope="row">Min Temp</th>
-								  <td>&nbsp;</td>
+								  <td id="tempmin"></td>
 								</tr>
 								<tr>
 								  <th scope="row">Max Temp</th>
-								  <td>&nbsp;</td>
+								  <td id="tempmax"></td>
 								</tr>
 								<tr>
 								  <th scope="row">Wind Speed</th>
-								  <td>&nbsp;</td>
+								  <td id="speedwindy"></td>
 								</tr>
 								<tr>
 								  <th scope="row">Clouds</th>
-								  <td>&nbsp;</td>
+								  <td id="cloud"></td>
 								</tr>
 								<tr>
 								  <th scope="row">Rain</th>
-								  <td>&nbsp;</td>
+								  <td id="volrain"></td>
 								</tr>
 								<tr>
 								  <th scope="row">Snow</th>
-								  <td>&nbsp;</td>
+								  <td id="volsnow"></td>
 								</tr>
 							  </tbody>
 							</table>
@@ -211,6 +210,10 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="app.js"></script>
+ <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+<script text="text/javascript" src="jquery-3.4.1.js"></script>
+<script text="text/javascript" src="conex.js"></script>
+<script text="text/javascript" src="weather.js"></script>
 
 
 
