@@ -117,17 +117,6 @@
 	
 	
 	
-	$ocu = $_POST['oculto'];
-
-if($ocu == 1){
-    $fab =$_POST['fab'];
-    $ciu = $_POST['ciudad'];
-    $fabt ="insert into fabrica (fabrica, fk_ciudad, fabricaStatus) value ('$fab', '$ciu', 1)";
-    include 'conex.php';
-    mysqli_query($link,$fabt);
-    header("location:index.php");
-	
-	
  <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
     <script text="text/javascript" src="jquery-3.4.1.js"></script>
     <script text="text/javascript" src="conex.js"></script>

@@ -14,11 +14,11 @@
 	<?php	include 'conex.php'; ?>
 
     <header class="cabeza">
-        <nav class="navbar navbar-light ">
+        <nav class="navbar navbar-light">
             <a class="navbar-brand"><img id="arbol" src="icons/logoletra_crece.png"></a>
             <form class="form-inline" action="insert.php" method="post" id="ciuBus">
 				<label>Ciudad </label>
-				<select name="ciudadf" id="fabciudad" class="form-control">
+				<select name="ciudad" id="ciudad" class="form-control">
 					<?php 
 						include 'conex.php';
 						$consulta = "SELECT id, ciudad FROM ciudades";
@@ -28,8 +28,7 @@
 								<?php echo $arr[1];?>
 							</option>
 					 <?php       }  ?>
-				</select>
-				<input type="hidden" name="oculto" value="1">    
+				</select>   
                 <button class="btn btn-outline-success my-2 my-sm-0" id="enviarf" type="submit">Search</button>
             </form>
         </nav>
