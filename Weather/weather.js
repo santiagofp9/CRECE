@@ -19,7 +19,7 @@ $(document).ready(function(){
           lluvia1h=(respuesta.rain1h);
           console.log(lluvia1h);
           if (lluvia===undefined){ 
-           $("#volrain").html("Volumen de Luvvia 0,00 mm")
+           $("#volrain").html("Volumen de Luvia 0,00 mm")
                 }else{
                   $("#volrain").html("Volumen de lluvia de las ultimas 1 hora" + " " + lluvia);
                 }
@@ -30,7 +30,7 @@ $(document).ready(function(){
           if (nieve==undefined){
            $("#volsnow").html("Volumen de Nieve 0,00 mm")
                 }else{
-                  $("#volsnow").html("Volumen de lluvia de las ultimas 3 horas" + " " + nieve);
+                  $("#volsnow").html("Volumen de Nieve de las ultimas 3 horas" + " " + nieve);
                 }
                
                   
