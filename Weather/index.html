@@ -153,11 +153,11 @@
         <div id="contenedor">
         <!-- Dia 1 --> 
         <div id="dia1"> 
-                <div class="app-title pronos">
-                    <p>Clima</p>
+            <p class="prono5">Clima</p>
+                <div class="app-title pronos"> 
                 </div>
                 <div class="weather-container1">
-                    <div id="fechafore"></div>
+                    <div id="fechafore" class="fechafore"></div>
                     <div id="clima1" class="weather-icon1"> 
                             <img src="icons/unknown.png" alt=""> 
                          </div>
@@ -165,7 +165,7 @@
                       
                     </div>
                     <div id="weather1" class="temperature-description1">
-                        <p></p>
+                        
                     </div>
                     <div id="tempminFore"></div>
                     <div id="tempmaxFore"></div>
@@ -180,20 +180,21 @@
             
             <!-- Dia 2 -->
         <div id="dia2"> 
-                <div class="app-title pronos">
-                    <p>Clima</p>
+            <p class="prono5">Clima</p>
+            <div class="app-title pronos">
+                   
                 </div>
                 <div class="weather-container1">
-                    <div id="fechafore2"></div>
+                    <div id="fechafore2" class="fechafore"></div>
                     <div id="clima2" class="weather-icon1"> 
                             <img src="icons/unknown.png" alt=""> 
                          </div>
-                    <div id="temperature-value2">
+                    <div id="temperature-value2" >
                       
                     </div>
-                    <div id="weather2" class="temperature-description2">
-                        <p></p>
-                    </div>
+                    <div  id="weather2" class="temperature-description2">
+                    
+                    </div class="diasprono">
                     <div id="tempminFore2"></div>
                     <div id="tempmaxFore2"></div>
                     <div id="speed2"> </div>
@@ -208,11 +209,11 @@
 
               <!-- Dia 3 -->
         <div id="dia3"> 
+            <p class="prono5">Clima</p>
                 <div class="app-title pronos">
-                    <p>Clima</p>
                 </div>
                 <div class="weather-container1">
-                    <div id="fechafore3"></div>
+                    <div id="fechafore3" class="fechafore"></div>
                     <div id="clima3" class="weather-icon1"> 
                             <img src="icons/unknown.png" alt=""> 
                          </div>
@@ -235,11 +236,11 @@
 
                 <!-- Dia 4 -->
         <div id="dia4"> 
+            <p class="prono5">Clima</p>
                 <div class="app-title pronos">
-                    <p>Clima</p>
                 </div>
                 <div class="weather-container1">
-                    <div id="fechafore4"></div>
+                    <div id="fechafore4" class="fechafore"></div>
                     <div id="clima4" class="weather-icon1"> 
                             <img src="icons/unknown.png" alt=""> 
                          </div>
@@ -262,11 +263,11 @@
 
              <!-- Dia 5 -->
         <div id="dia5"> 
+            <p class="prono5">Clima</p>
                 <div class="app-title pronos">
-                    <p>Clima</p>
                 </div>
                 <div class="weather-container1">
-                    <div id="fechafore5"></div>
+                    <div id="fechafore5" class="fechafore"></div>
                     <div id="clima5" class="weather-icon1"> 
                             <img src="icons/unknown.png" alt=""> 
                          </div>
@@ -288,6 +289,21 @@
         
             
         </section>
+        <br>
+        <br>
+        <footer >
+
+            <ul class="listafooter">
+                <li class="redes"><a href="http://www.facebook.es" target="face">
+                   <img  src="icon_social.png" alt="Entra en nuestros espacios en las redes sociales" width="65" height="16" id="redesSociales" onMouseOver="cambio_imagen(this,1)" onMouseOut="cambio_imagen(this,0)">
+                 </a></li>
+                
+                  <li class="correo">
+                  <a href="mailto:info@crece-tiempoaltiempo.com" title="info@tiempoaltiempo.com">E-Mail: info@taltiempo.com</a></li>
+                  <li  class="legal"><a href="legal.html" target="legal">Legal</a></li>
+                </ul>
+
+        </footer>
 
        
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -300,4 +316,3 @@
             <script text="text/javascript" src="weather.js"></script>
     </body>
     </html>
-
