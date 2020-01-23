@@ -19,25 +19,43 @@ function validarEmail(){
     }
 
 }
-function validarPassword(){
-    var p1 = document.getElementById("passwd").value;
-    var p2 = document.getElementById("passwd2").value;
-    var espacios = false;
-    var cont = 0;
-
-    while (!espacios && (cont < p1.length)) {
-        if (p1.charAt(cont) == " ")
-          espacios = true;
-        cont++;
-      }
-         
-      if (espacios) {
-        alert ("La contraseña no puede contener espacios en blanco");
-        return false
-      }
-    }
-    if (p1.length == 0 || p2.length == 0) {
-        alert("Los campos de la password no pueden quedar vacios");
-        return false;
-      }
-      if (p1 != p2) {}
+function validarPassword () {
+var expresionRegular = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+var p1 = document.getElementById("password").value;
+var p2 = document.getElementById("confirm password").value;
+  
+  if (expresionRegular.test(p1)) {
+    emailOk=true;
+    document.getElementById('mensajepassword').innerHTML = " ";
+   // estilo2(valorEmail);  
+  }
+  else {
+    emailOk=false;
+    document.getElementById('mensajepassword').innerHTML = "PASSWORD INVALIDO"; 
+  }
+  if (expresionRegular.test(p2)) {
+    emailOk=true;
+    document.getElementById('mensajepassword2').innerHTML = " ";
+    
+  }
+  else {
+    emailOk=false;
+    document.getElementById('mensajepassword2').innerHTML = "confirmacion incorrecta"; 
+  }
+  if (p1.length == 0 || p2.length == 0) {
+    alert("Los campos de la password no pueden quedar vacios");
+    return false;
+  }   
+  if (p1 != p2) {
+    alert("Las passwords deben de coincidir");
+    return false;
+  } else {
+    alert("Todo esta correcto");
+    return true; 
+  }
+}
+/*document.getElementById('toggleProfile').addEventListener('click', function () {
+  [].map.call(document.querySelectorAll('.profile'), function(el) {
+    el.classList.toggle('profile--open');
+  });
+});*/
