@@ -1,7 +1,22 @@
 //PRONÓSTICO ACTUAL
-$(document).ready(function(){
+$(document).ready(cambio)
+	
+	city = $("#ciudad").val()
+	console.log("prueba111"+city)
+
+	$("#ciudad").change(function(){
+		city = $("#ciudad").val()
+		uerrele = "http://api.openweathermap.org/data/2.5/weather?id="+city+"&lang=sp&units=metric&APPID=65a9b2caaaba5d1b1762d5889a2637ce"
+		cambio();
+	})
+
+	uerrele = "http://api.openweathermap.org/data/2.5/weather?id="+city+"&lang=sp&units=metric&APPID=65a9b2caaaba5d1b1762d5889a2637ce"
+
+	function cambio(){
+
+
   $.ajax({
-      url: "http://api.openweathermap.org/data/2.5/weather?id=3117735&lang=sp&units=metric&APPID=65a9b2caaaba5d1b1762d5889a2637ce",
+      url: uerrele,
       datatype : "json",
       type: "GET",
 
@@ -42,7 +57,7 @@ $(document).ready(function(){
       
     });
 
-});
+};
 
 
 
