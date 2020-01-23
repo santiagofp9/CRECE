@@ -35,7 +35,8 @@
 						</select>   
 						
 					</form>                      
-                    </div>             
+                    </div>
+				
                     <img class="login" src="login.png" alt="">
                       
                   </ul>
@@ -308,6 +309,8 @@
             <script text="text/javascript" src="jquery-3.4.1.js"></script>
             <script text="text/javascript" src="conex.js"></script>
             <script text="text/javascript" src="weather.js"></script>
+			<script src="validar.js"></script>
+	  		<script type="text/javascript" src="login.js"></script>
     </body>
     </html>
 
