@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="font/Rimouski.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
 	
-	<?php	include 'conex.php'; ?>
+	<?php include 'conex.php'; ?>
 
     <header class="cabeza">
         <nav class="navbar navbar-light">
