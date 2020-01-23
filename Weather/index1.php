@@ -37,7 +37,7 @@
                     <div class="buscar"> 
 					<form class="example" action="/action_page.php" method="post" id="ciuBus" style="margin:auto;max-width:300px">
 						<select name="ciudad" id="ciudad">
-							<option value="3117735">Madrid</option>
+							<option value="3117735" selected>Madrid</option>
 							<?php 
 								include 'conex.php';
 								$consulta = "SELECT id, ciudad FROM ciudades";
@@ -307,7 +307,7 @@
              <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/locale/es.js"></script>
             <script text="text/javascript" src="jquery-3.4.1.js"></script>
             <script text="text/javascript" src="conex.js"></script>
-            <script text="text/javascript" src="weather.js"></script>
+            <script text="text/javascript" src="weather1.js"></script>
     </body>
     </html>
 
