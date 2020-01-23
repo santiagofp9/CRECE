@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link src="iconos.js"></link>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<?php include 'conex.php'; ?>
@@ -282,6 +283,21 @@
         
             
         </section>
+		<br>
+        <br>
+        <footer >
+
+            <ul class="listafooter">
+                <li class="redes"><a href="http://www.facebook.es" target="face">
+                   <img  src="icon_social.png" alt="Entra en nuestros espacios en las redes sociales" width="65" height="16" id="redesSociales" onMouseOver="cambio_imagen(this,1)" onMouseOut="cambio_imagen(this,0)">
+                 </a></li>
+                
+                  <li class="correo">
+                  <a href="mailto:info@crece-tiempoaltiempo.com" title="info@tiempoaltiempo.com">E-Mail: info@taltiempo.com</a></li>
+                  <li  class="legal"><a href="legal.html" target="legal">Legal</a></li>
+                </ul>
+
+        </footer>
 
        
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
