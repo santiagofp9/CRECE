@@ -71,8 +71,8 @@ $(document).ready(function(){
       success: function (respuesta) {
         console.log(respuesta);
                           
-       $("#clima1").html(`<img src="icons/${respuesta.list[0].weather[0].icon}.png"/>`);
-       $('#weather1').html(respuesta.list[0].weather.description);
+       $("#clima1").html(`<img src="icons/${respuesta.list[5].weather[0].icon}.png"/>`);
+       $('#weather1').html(respuesta.list[5].weather.description);
 
        
       },
@@ -96,8 +96,8 @@ $(document).ready(function(){
       success: function(respuesta) {
         console.log(respuesta);
                   
-       $("#clima2").html(`<img src="icons/${respuesta.list[10].weather[0].icon}.png"/>`);
-       $('#weather2').html(respuesta.list[10].weather.description);
+       $("#clima2").html(`<img src="icons/${respuesta.list[12].weather[0].icon}.png"/>`);
+       $('#weather2').html(respuesta.list[12].weather.description);
       
       },
       error: function (jqXHR, textStatus, errorThrown){
@@ -123,8 +123,8 @@ $(document).ready(function(){
                       
           
   
-            $("#clima3").html(`<img src="icons/${respuesta.list[18].weather[0].icon}.png"/>`);
-            $('#weather3').html(respuesta.list[18].weather.description);
+            $("#clima3").html(`<img src="icons/${respuesta.list[20].weather[0].icon}.png"/>`);
+            $('#weather3').html(respuesta.list[20].weather.description);
           },
           error: function(jqXHR, textStatus, errorThrown){
             console.log("ERROR :  " + errorThrown);
@@ -147,8 +147,8 @@ $(document).ready(function(){
                   
       
 
-        $("#clima4").html(`<img src="icons/${respuesta.list[26].weather[0].icon}.png"/>`);
-       $('#weather4').html(respuesta.list[26].weather.description);
+        $("#clima4").html(`<img src="icons/${respuesta.list[28].weather[0].icon}.png"/>`);
+       $('#weather4').html(respuesta.list[28].weather.description);
       },
       error: function(jqXHR, textStatus, errorThrown){
         console.log("ERROR :  " + errorThrown);
@@ -169,8 +169,8 @@ $(document).ready(function(){
           success: function(respuesta) {
             console.log(respuesta);
                       
-            $("#clima5").html(`<img src="icons/${respuesta.list[34].weather[0].icon}.png"/>`);
-            $('#weather5').html(respuesta.list[34].weather.description);
+            $("#clima5").html(`<img src="icons/${respuesta.list[36].weather[0].icon}.png"/>`);
+            $('#weather5').html(respuesta.list[36].weather.description);
   
          
           },

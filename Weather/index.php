@@ -1,4 +1,3 @@
-
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link src="iconos.js"></link>
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
 </head>
 <body>
 	<?php include 'conex.php'; ?>
@@ -18,7 +17,7 @@
             <ul>
                     <img class="crece" src="logoletra_crece2.png" alt="">
                    
-                    <img class="banner" src="FotoJet.jpg" alt="">
+                    <img class="banner" src="FotoJet2.jpg" alt="">
                     <div class="buscar"> 
 					<form class="example" action="/action_page.php" method="post" id="ciuBus" style="margin:auto;max-width:300px">
 						<select name="ciudad" id="ciudad">
@@ -309,8 +308,7 @@
             <script text="text/javascript" src="jquery-3.4.1.js"></script>
             <script text="text/javascript" src="conex.js"></script>
             <script text="text/javascript" src="weather.js"></script>
-			<script src="validar.js"></script>
-	  		<script type="text/javascript" src="login.js"></script>
+		
     </body>
     </html>
 
