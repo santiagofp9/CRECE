@@ -30,13 +30,13 @@ $(document).ready(cambio)
         $("#speedwindy").html("Velocidad del Viento " +" " + respuesta.wind.speed + " " + "m/h" + "<br>");
         $("#cloud").html("Nubosidad " +" " + respuesta.clouds.all+ "%" + "<br>");
         
-        lluvia=(respuesta.rain);
-        lluvia1h=(respuesta.rain1h);
+        lluvia=(respuesta.rain["1h"]);
+        lluvia1h=(respuesta.rain["1h"]);
         console.log(lluvia1h);
         if (lluvia===undefined){ 
          $("#volrain").html("Volumen de Luvia 0,00 mm")
               }else{
-                $("#volrain").html("Volumen de lluvia de las ultimas 1 hora" + " " + lluvia);
+                $("#volrain").html("Volumen de lluvia de las última hora" + " " + lluvia +"mm");
               }
 
                

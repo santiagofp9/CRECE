@@ -1,21 +1,6 @@
-$(document).ready(cambio)
-	
-	city = $("#ciudad").val()
-	console.log("prueba111"+city)
-
-	$("#ciudad").change(function(){
-		city = $("#ciudad").val()
-		uerrele = "http://api.openweathermap.org/data/2.5/forecast?id="+city+"&lang=sp&units=metric&APPID=65a9b2caaaba5d1b1762d5889a2637ce"
-		cambio();
-	})
-
-	uerrele = "http://api.openweathermap.org/data/2.5/forecast?id="+city+"&lang=sp&units=metric&APPID=65a9b2caaaba5d1b1762d5889a2637ce"
-
-	function cambio(){
-
-
-  $.ajax({
-      url: uerrele,
+$(document).ready(function(){  
+$.ajax({
+      url: "http://api.openweathermap.org/data/2.5/forecast?id=3117735&lang=es&units=metric&APPID=65a9b2caaaba5d1b1762d5889a2637ce",
       datatype : "json",
       type: "GET",
 
@@ -56,9 +41,9 @@ $(document).ready(cambio)
       }
 
       
-       });
+   });
 
-};
+});
 
 //////////////////////////COMIENZA EL DIA 2////////////////////////////////////////////
 
